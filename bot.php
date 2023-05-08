@@ -13,7 +13,7 @@ use function Amp\File\{get, put, exists, unlink};
 
 
 
-mkdir ("data");
+
 if (!file_exists('data/lastupdate.txt')) {
 file_put_contents('data/lastupdate.txt', time());
 }
