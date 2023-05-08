@@ -20,7 +20,7 @@ def post(message):
     jj=open(name,"wb") 
     jj.write(downloaded_file)
     jj.close()
-    os.system('python entrykey.py "'+name+'" > test.txt')    
+    os.system('python3 entrykey.py "'+name+'" > test.txt')    
     jh=open("test.txt").read()
     xx="" 
     bot.reply_to(message, jh+xx) 
